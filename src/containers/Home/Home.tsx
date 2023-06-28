@@ -6,7 +6,7 @@ const Home = () => {
         const workElement = document.getElementById('work');
         workElement && workElement.scrollIntoView({ behavior: 'smooth' });
     };
-    const [words, setWords] = useState<string[]>([
+    const [words] = useState<string[]>([
         'JAVASCRIPT, TYPESCRIPT',
         'REACT, VUE3, VITE',
         'POSTGRES, MONGO-DB',
