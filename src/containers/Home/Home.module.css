@@ -1,0 +1,39 @@
+.home__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background: url("../../assets/home-bg.jpg") center/cover no-repeat;
+}
+
+.container {
+    width: 67%;
+}
+
+.home__title {
+    border: 2px solid #D43F52;
+    color: #D43F52;
+    display: inline-block;
+    letter-spacing: 6px;
+    padding: 25px 35px;
+    margin: 30px 0;
+}
+
+.home__rotate {
+    height: 3.5em;
+    overflow: hidden;
+}
+
+.home__btn {
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 40px;
+    padding: 16px 45px;
+    transition: all 0.4s ease-in-out;
+}
