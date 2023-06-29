@@ -1,10 +1,103 @@
-.worl__section {
+.work__section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    background: url("../../assets/home-bg.jpg") center/cover no-repeat;
+    padding: 50px 0;
+    background: #1a1a1a;
+    box-sizing: border-box;
+}
+
+.work__container {
+    width: 90%;
+}
+
+.work__title {
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.work__items_box {
+    display: flex;
+}
+
+.work__media {
+    display: flex;
+    flex-basis: 33%;
+}
+
+.work__object {
+    display: block;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    color: #D43F52;
+    font-size: 24px;
+    margin-right: 24px;
+    min-width: 60px;
+    max-height: 60px;
+    width: 60px;
+    height: 60px;
+    line-height: 55px;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 0.4s ease-in;
+}
+
+.work__object:hover {
+    background: white;
+}
+
+.work__laptop {
+    background: url("../../assets/laptop.svg") center /cover no-repeat;
+    background-size: 60%;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0) saturate(100%) invert(32%) sepia(50%) saturate(2300%) hue-rotate(330deg);
+}
+
+.work__optimal {
+    background: url("../../assets/optimization.svg") center /cover no-repeat;
+    background-size: 60%;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0) saturate(100%) invert(32%) sepia(50%) saturate(2300%) hue-rotate(330deg);
+}
+
+.work__plugin {
+    background: url("../../assets/plugin.svg") center /cover no-repeat;
+    background-size: 60%;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0) saturate(100%) invert(32%) sepia(50%) saturate(2300%) hue-rotate(330deg);
+}
+
+.work__media_body {
+    display: flex;
+    flex-direction: column;
+}
+
+.work__media_heading {
+    text-align: left;
+    min-height: 53px;
+}
+
+.work__media_content {
+    text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+    .work__items_box {
+        flex-direction: column;
+    }
+    .work__media {
+        padding-top: 30px;
+    }
+    .work__media_heading {
+        min-height: auto;
+        margin-bottom: 10px;
+    }
 }

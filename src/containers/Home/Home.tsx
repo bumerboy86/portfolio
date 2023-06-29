@@ -29,8 +29,7 @@ const Home = () => {
                 <h2 className={styles.home__rotate}>
                     <span>{words[currentWordIndex]}</span>
                 </h2>
-                <p>Я Full Stack Developer.</p>
-                <p>Специализируюсь на создании пользовательских интерфейсов.</p>
+                <p className={styles.home__content}>Специализируюсь на создании пользовательских интерфейсов.</p>
             </div>
             <a onClick={handleClick} className={styles.home__btn} data-wow-delay="1s">Посмотреть портфолио</a>
         </div>
