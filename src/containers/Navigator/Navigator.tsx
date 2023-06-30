@@ -4,7 +4,7 @@ const Navigator = () => {
     const home:HTMLElement | null = document.getElementById("home");
     const work:HTMLElement | null = document.getElementById("work");
     const about:HTMLElement | null = document.getElementById("about");
-    const handleClick = (data:HTMLElement):void => {
+    const handleClick = (data:HTMLElement | null):void => {
         data && data.scrollIntoView({ behavior: 'smooth' });
     };
     return (
