@@ -1,0 +1,17 @@
+.progress__text {
+    color: #ffffff;
+    font-weight: bold;
+    padding-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    text-align: initial;
+}
+.progress_line {
+    width: 100%;
+    background: white;
+    margin-bottom: 18px;
+}
+.progress_line_secondary {
+    background: #d43f52;
+    height: 5px;
+}

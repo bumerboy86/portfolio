@@ -4,7 +4,7 @@ const Work = () => {
     return (
         <div id="work" className={styles.work__section}>
             <div className={styles.work__container}>
-                <h2 className={styles.work__title}>Навыки</h2>
+                <h2 className={styles.work__title}>Что я делаю</h2>
                 <div className={styles.work__items_box}>
 
                     <div className={styles.work__media}>
@@ -12,8 +12,8 @@ const Work = () => {
                             <div className={styles.work__laptop}></div>
                         </div>
                         <div className={styles.work__media_body}>
-                            <h3 className={styles.work__media_heading}>Отзывчивый дизайн</h3>
-                            <p className={styles.work__media_content}>Адаптивная верстка для удобства использования на мобильных устройствах.</p>
+                            <h3 className={styles.work__media_heading}>Мобильная адаптация</h3>
+                            <p className={styles.work__media_content}>Верстаю сайт под все разрешения.</p>
                         </div>
                     </div>
 
@@ -22,8 +22,8 @@ const Work = () => {
                             <div className={styles.work__optimal}></div>
                         </div>
                         <div className={styles.work__media_body}>
-                            <h3 className={styles.work__media_heading}>Оптимизация</h3>
-                            <p className={styles.work__media_content}>Опыт оптимизации веб-приложений и сайтов для достижения быстрой загрузки.</p>
+                            <h3 className={styles.work__media_heading}>Ускорение приложений</h3>
+                            <p className={styles.work__media_content}>Уменьшаю скорость загрузки сайта.</p>
                         </div>
                     </div>
 
@@ -33,7 +33,7 @@ const Work = () => {
                         </div>
                         <div className={styles.work__media_body}>
                             <h3 className={styles.work__media_heading}>JavaScript и фреймворки</h3>
-                            <p className={styles.work__media_content}>Добавляет интерактивности и динамического поведения для веб-приложений</p>
+                            <p className={styles.work__media_content}>Пишу скрипты для автоматизации процессов и анимации на сайте.</p>
                         </div>
                     </div>
 

@@ -6,7 +6,7 @@
     text-align: center;
     width: 100%;
     min-height: 100vh;
-    padding: 50px 0 50px;
+    padding: 50px 0;
     background: #1a1a1a;
     box-sizing: border-box;
 }
@@ -31,7 +31,6 @@
 }
 
 .work__object {
-    display: block;
     border: 2px solid #ffffff;
     border-radius: 50%;
     color: #D43F52;
