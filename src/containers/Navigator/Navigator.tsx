@@ -1,8 +1,15 @@
 import styles from "./Navigator.module.css";
+import {useEffect, useRef} from "react";
 
 const Navigator = () => {
-    const work:HTMLElement = document.getElementById("work")!;
-    const about:HTMLElement = document.getElementById("about")!;
+    const workRef = useRef<HTMLElement | null>(null);
+    const aboutRef = useRef<HTMLElement | null>(null);
+
+    useEffect(() => {
+        workRef.current = document.getElementById('work');
+        aboutRef.current = document.getElementById('about');
+    }, []);
+
     const handleScrollToHome = ():void => {
         window.scrollTo({
             top: 0,
@@ -10,10 +17,10 @@ const Navigator = () => {
         });
     };
     const handleScrollToWork = ():void => {
-        work && work.scrollIntoView({behavior: 'smooth'});
+        workRef.current && workRef.current!.scrollIntoView({behavior: 'smooth'});
     };
     const handleScrollToAbout = ():void => {
-        about && about.scrollIntoView({behavior: 'smooth'});
+        aboutRef.current && aboutRef.current!.scrollIntoView({behavior: 'smooth'});
     };
     return (
         <div className={styles.navigator}>
