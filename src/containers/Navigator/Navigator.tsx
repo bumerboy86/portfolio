@@ -9,18 +9,24 @@ const Navigator = () => {
     };
     return (
         <div className={styles.navigator}>
-            <div
+            <a
                 className={styles.navigator__items}
                 data-tooltip="Home"
-                onClick={() => handleClick(home)}></div>
-            <div
+                onClick={() => handleClick(home)}
+                data-wow-delay="1s"
+            ></a>
+            <a
                 className={styles.navigator__items}
                 data-tooltip="Work"
-                onClick={() => handleClick(work)}></div>
-            <div
+                onClick={() => handleClick(work)}
+                data-wow-delay="1s"
+            ></a>
+            <a
                 className={styles.navigator__items}
                 data-tooltip="About"
-                onClick={() => handleClick(about)}></div>
+                onClick={() => handleClick(about)}
+                data-wow-delay="1s"
+            ></a>
             {/*<div */}
             {/*    className={styles.navigator__items}*/}
             {/*    data-tooltip="Portfolio" */}
