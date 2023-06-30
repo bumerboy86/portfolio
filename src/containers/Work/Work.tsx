@@ -1,8 +1,12 @@
 import styles from "./Work.module.css";
+import {RefObject} from "react";
 
-const Work = () => {
+type TWorkProps = {
+    element: RefObject<HTMLDivElement | null>;
+}
+const Work = (props: TWorkProps) => {
     return (
-        <div id="work" className={styles.work__section}>
+        <div id="work" ref={props.element} className={styles.work__section}>
             <div className={styles.work__container}>
                 <h2 className={styles.work__title}>Что я делаю</h2>
                 <div className={styles.work__items_box}>

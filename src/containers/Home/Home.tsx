@@ -1,11 +1,11 @@
 import styles from "./Home.module.css";
-import {useEffect, useState} from "react";
-const Home = () => {
+import {RefObject, useEffect, useState} from "react";
 
-    const handleClick = ():void => {
-        const workElement = document.getElementById('work');
-        workElement && workElement.scrollIntoView({ behavior: 'smooth' });
-    };
+type THomeProps = {
+    fn: () => void;
+    element: RefObject<HTMLDivElement | null>;
+}
+const Home = (props: THomeProps) => {
     const [words] = useState<string[]>([
         'JAVASCRIPT, TYPESCRIPT',
         'REACT, VUE3, VITE',
@@ -19,11 +19,11 @@ const Home = () => {
         const interval:number = setInterval(():void => {
             setCurrentWordIndex((prevIndex:number) => (prevIndex + 1) % words.length);
         }, 2800);
-
         return () => clearInterval(interval);
     }, [words]);
+
     return (
-        <div id="home" className={styles.home__section}>
+        <div id="home"  ref={props.element} className={styles.home__section}>
             <div className={styles.container}>
                 <h1 className={styles.home__title}>Frontend Developer</h1>
                 <h2 className={styles.home__rotate}>
@@ -31,7 +31,7 @@ const Home = () => {
                 </h2>
                 <p className={styles.home__content}>Специализируюсь на создании пользовательских интерфейсов.</p>
             </div>
-            <a onClick={handleClick} className={styles.home__btn} data-wow-delay="1s">Посмотреть портфолио</a>
+            <a onClick={props.fn} className={styles.home__btn} data-wow-delay="1s">Посмотреть портфолио</a>
         </div>
     )
 }
