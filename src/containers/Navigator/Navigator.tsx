@@ -1,29 +1,38 @@
 import styles from "./Navigator.module.css";
 
-type TNavigatorProps = {
-    goHome: () => void;
-    goWork: () => void;
-    goAbout: () => void;
-}
-const Navigator = (props: TNavigatorProps) => {
+const Navigator = () => {
+    const work:HTMLElement = document.getElementById("work")!;
+    const about:HTMLElement = document.getElementById("about")!;
+    const handleScrollToHome = ():void => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
+    const handleScrollToWork = ():void => {
+        work && work.scrollIntoView({behavior: 'smooth'});
+    };
+    const handleScrollToAbout = ():void => {
+        about && about.scrollIntoView({behavior: 'smooth'});
+    };
     return (
         <div className={styles.navigator}>
             <a
                 className={styles.navigator__items}
                 title="Home"
-                onClick={props.goHome}
+                onClick={handleScrollToHome}
                 data-wow-delay="1s"
             ></a>
             <a
                 className={styles.navigator__items}
                 title="Work"
-                onClick={props.goWork}
+                onClick={handleScrollToWork}
                 data-wow-delay="1s"
             ></a>
             <a
                 className={styles.navigator__items}
                 title="About"
-                onClick={props.goAbout}
+                onClick={handleScrollToAbout}
                 data-wow-delay="1s"
             ></a>
         </div>

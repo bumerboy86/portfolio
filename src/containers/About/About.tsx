@@ -1,13 +1,9 @@
 import styles from "./About.module.css";
 import ProgressItem from "../../components/ProgressItem/ProgressItem.tsx";
-import {RefObject} from "react";
 
-type TAbout = {
-    element: RefObject<HTMLDivElement | null>;
-}
-const About = (props: TAbout) => {
+const About =() => {
     return (
-        <div id="about" ref={props.element} className={styles.about__section}>
+        <div id="about" className={styles.about__section}>
             <div className={styles.about__container}>
                 <div className={styles.about__content}>
                     <h2>Обо мне</h2>
@@ -25,6 +21,6 @@ const About = (props: TAbout) => {
             </div>
         </div>
     )
-}
+};
 
 export default About;
