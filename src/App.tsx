@@ -6,10 +6,10 @@ import Navigator from "./containers/Navigator/Navigator.tsx";
 function App() {
   return (
     <>
-        <Navigator />
         <Home />
         <Work />
         <About />
+        <Navigator />
     </>
   )
 }

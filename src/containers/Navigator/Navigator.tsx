@@ -19,19 +19,16 @@ const Navigator = () => {
         <div className={styles.navigator}>
             <a
                 className={styles.navigator__items}
-                title="Home"
                 onClick={handleScrollToHome}
                 data-wow-delay="1s"
             ></a>
             <a
                 className={styles.navigator__items}
-                title="Work"
                 onClick={handleScrollToWork}
                 data-wow-delay="1s"
             ></a>
             <a
                 className={styles.navigator__items}
-                title="About"
                 onClick={handleScrollToAbout}
                 data-wow-delay="1s"
             ></a>
