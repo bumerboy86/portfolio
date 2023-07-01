@@ -58,6 +58,7 @@
     transition: all 0.4s ease-in-out;
     cursor: pointer;
     position: relative;
+    user-select: none;
 }
 
 @media screen and (max-width: 430px){
