@@ -6,7 +6,7 @@ const About =() => {
         <div id="about" className={styles.about__section}>
             <div className={styles.about__container}>
                 <div className={styles.about__content}>
-                    <h2>Обо мне</h2>
+                    <h2>ОБО МНЕ</h2>
                     <h4 className={styles.about__title_text}>Воронов Руслан Булатович</h4>
                     <p className={styles.about__text_inf}>Занимаюсь веб-разработкой, стремлюсь создавать эффективные и интуитивно понятные веб-приложения.</p>
                 </div>

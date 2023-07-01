@@ -4,7 +4,7 @@ const Work = () => {
     return (
         <div id="work" className={styles.work__section}>
             <div className={styles.work__container}>
-                <h2 className={styles.work__title}>Что я делаю</h2>
+                <h2 className={styles.work__title}>ЧТО Я ДЕЛАЮ</h2>
                 <div className={styles.work__items_box}>
 
                     <div className={styles.work__media}>

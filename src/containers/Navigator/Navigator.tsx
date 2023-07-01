@@ -4,23 +4,29 @@ import {useEffect, useRef} from "react";
 const Navigator = () => {
     const workRef = useRef<HTMLElement | null>(null);
     const aboutRef = useRef<HTMLElement | null>(null);
+    const portfolioRef = useRef<HTMLElement | null>(null);
 
     useEffect(() => {
-        workRef.current = document.getElementById('work');
-        aboutRef.current = document.getElementById('about');
+        workRef.current = document.getElementById("work");
+        aboutRef.current = document.getElementById("about");
+        portfolioRef.current = document.getElementById("portfolio")
     }, []);
 
     const handleScrollToHome = ():void => {
         window.scrollTo({
             top: 0,
-            behavior: 'smooth',
+            behavior: "smooth",
         });
     };
     const handleScrollToWork = ():void => {
-        workRef.current && workRef.current!.scrollIntoView({behavior: 'smooth'});
+        workRef.current && workRef.current!.scrollIntoView({behavior: "smooth"});
     };
     const handleScrollToAbout = ():void => {
-        aboutRef.current && aboutRef.current!.scrollIntoView({behavior: 'smooth'});
+        aboutRef.current && aboutRef.current!.scrollIntoView({behavior: "smooth"});
+    };
+
+    const handleScrollToPortfolio = ():void => {
+        aboutRef.current && portfolioRef.current!.scrollIntoView({behavior: "smooth"});
     };
     return (
         <div className={styles.navigator}>
@@ -37,6 +43,11 @@ const Navigator = () => {
             <a
                 className={styles.navigator__items}
                 onClick={handleScrollToAbout}
+                data-wow-delay="1s"
+            ></a>
+            <a
+                className={styles.navigator__items}
+                onClick={handleScrollToPortfolio}
                 data-wow-delay="1s"
             ></a>
         </div>
