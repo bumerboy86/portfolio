@@ -9,10 +9,23 @@
     min-height: 100vh;
     padding: 100px 0;
     background: url("../../assets/home-bg.jpg") center/cover no-repeat;
+    position: relative;
+}
+
+.home__section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
 }
 
 .container {
     width: 67%;
+    position: relative;
 }
 
 .home__title {
@@ -21,11 +34,12 @@
     display: inline-block;
     letter-spacing: 6px;
     padding: 25px 35px;
-    margin: 30px 0;
+    margin-bottom: 30px;
 }
 
 .home__content {
     font-size: 20px;
+    color: antiquewhite;
 }
 
 .home__rotate {
@@ -43,6 +57,7 @@
     padding: 16px 45px;
     transition: all 0.4s ease-in-out;
     cursor: pointer;
+    position: relative;
 }
 
 @media screen and (max-width: 430px){
