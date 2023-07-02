@@ -16,7 +16,7 @@ const Contact = () => {
                 <p className={styles.contact__title}>Связаться со мной</p>
                 <div className={styles.contact__media}>
                     <div className={styles.contact__icon_box}>
-                        <a href="tel:+77076467573" target={"_blank"} className={styles.contact__icon_phone}></a>
+                        <a href="tel:+77076467573" className={styles.contact__icon_phone}></a>
                     </div>
                     <p className={styles.contact__media_content}>+7(707)-646-75-73</p>
                 </div>
