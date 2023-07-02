@@ -1,4 +1,5 @@
 import styles from "./Contact.module.css";
+import Footer from "../Footer/Footer.tsx";
 
 const Contact = () => {
     function openGmailCompose():void {
@@ -32,6 +33,7 @@ const Contact = () => {
                     <p className={styles.contact__media_content}>Казахстан, г.Алматы</p>
                 </div>
             </address>
+            <Footer />
         </div>
     )
 }

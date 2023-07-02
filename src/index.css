@@ -18,3 +18,18 @@ h1,h2,h3,h4,h5
   color: #ffffff;
   font-weight: bold;
 }
+
+li {
+  list-style-type: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 0;
+}

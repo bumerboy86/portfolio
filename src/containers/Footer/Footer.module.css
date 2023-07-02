@@ -1,0 +1,30 @@
+.footer__link {
+    cursor: pointer;
+    color: #337ab7;
+}
+
+.footer__line {
+    width: 200px;
+    border-bottom: 2px solid #999999;
+    margin: 10px 0;
+}
+.footer__ul {
+    display: flex;
+    gap: 15px;
+}
+
+.footer__social_gramm {
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: url("../../assets/telegram-svgrepo-com.svg") no-repeat;
+    background-size: contain;
+}
+
+.footer__social_whats_app {
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: url("../../assets/whatsapp-svgrepo-com.svg") no-repeat;
+    background-size: contain;
+}
