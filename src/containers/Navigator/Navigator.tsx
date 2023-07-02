@@ -1,15 +1,17 @@
 import styles from "./Navigator.module.css";
-import {useEffect, useRef} from "react";
+import {MutableRefObject, useEffect, useRef} from "react";
 
 const Navigator = () => {
-    const workRef = useRef<HTMLElement | null>(null);
-    const aboutRef = useRef<HTMLElement | null>(null);
-    const portfolioRef = useRef<HTMLElement | null>(null);
+    const workRef:MutableRefObject<HTMLElement | null>  = useRef(null);
+    const aboutRef:MutableRefObject<HTMLElement | null>  = useRef(null);
+    const portfolioRef:MutableRefObject<HTMLElement | null>  = useRef(null);
+    const contactRef: MutableRefObject<HTMLElement | null> = useRef(null);
 
     useEffect(() => {
         workRef.current = document.getElementById("work");
         aboutRef.current = document.getElementById("about");
-        portfolioRef.current = document.getElementById("portfolio")
+        portfolioRef.current = document.getElementById("portfolio");
+        contactRef.current = document.getElementById("contact");
     }, []);
 
     const handleScrollToHome = ():void => {
@@ -28,6 +30,10 @@ const Navigator = () => {
     const handleScrollToPortfolio = ():void => {
         aboutRef.current && portfolioRef.current!.scrollIntoView({behavior: "smooth"});
     };
+
+    const handleScrollToContact = (): void => {
+        contactRef.current && contactRef.current!.scrollIntoView({behavior: "smooth"});
+    }
     return (
         <div className={styles.navigator}>
             <a
@@ -48,6 +54,11 @@ const Navigator = () => {
             <a
                 className={styles.navigator__items}
                 onClick={handleScrollToPortfolio}
+                data-wow-delay="1s"
+            ></a>
+            <a
+                className={styles.navigator__items}
+                onClick={handleScrollToContact}
                 data-wow-delay="1s"
             ></a>
         </div>

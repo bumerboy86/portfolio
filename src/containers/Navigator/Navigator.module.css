@@ -3,7 +3,7 @@
     flex-direction: column;
     position: fixed;
     right: 10px;
-    top: calc(50% - 50px);
+    top: calc(50% - 60px);
     z-index: 5;
 }
 
