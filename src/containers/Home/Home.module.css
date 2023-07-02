@@ -59,6 +59,7 @@
     cursor: pointer;
     position: relative;
     user-select: none;
+    text-transform: uppercase;
 }
 
 @media screen and (max-width: 430px){
@@ -71,5 +72,11 @@
     .home__title {
         letter-spacing: 4px;
         padding: 16px 17px;
+    }
+}
+
+@media screen and  (max-width: 340px){
+    .home__btn {
+        padding: 16px 25px;
     }
 }

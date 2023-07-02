@@ -60,6 +60,7 @@ const Portfolio = () => {
                     </a>
                 </div>
             </div>
+            <a href={"https://github.com/bumerboy86"} className={styles.portfolio__btn} target={"_blank"}>Посмотреть на GitHub</a>
         </div>
     )
 }

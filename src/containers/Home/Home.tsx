@@ -32,7 +32,7 @@ const Home = () => {
                 </h2>
                 <p className={styles.home__content}>Специализируюсь на создании пользовательских интерфейсов.</p>
             </div>
-            <a onClick={handleScrollToWork} className={styles.home__btn} data-wow-delay="1s">Посмотреть портфолио</a>
+            <a onClick={handleScrollToWork} className={styles.home__btn}>Посмотреть портфолио</a>
         </div>
     )
 }
