@@ -18,3 +18,24 @@
     z-index: 6;
     cursor: pointer;
 }
+
+.navigator__items::after {
+    content: attr(title);
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    border-radius: 5px;
+}
+
+.navigator__items:hover::after {
+    opacity: 1;
+    visibility: visible;
+}

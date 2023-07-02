@@ -40,26 +40,31 @@ const Navigator = () => {
                 className={styles.navigator__items}
                 onClick={handleScrollToHome}
                 data-wow-delay="1s"
+                title="home"
             ></a>
             <a
                 className={styles.navigator__items}
                 onClick={handleScrollToWork}
                 data-wow-delay="1s"
+                title="work"
             ></a>
             <a
                 className={styles.navigator__items}
                 onClick={handleScrollToAbout}
                 data-wow-delay="1s"
+                title="about"
             ></a>
             <a
                 className={styles.navigator__items}
                 onClick={handleScrollToPortfolio}
                 data-wow-delay="1s"
+                title="portfolio"
             ></a>
             <a
                 className={styles.navigator__items}
                 onClick={handleScrollToContact}
                 data-wow-delay="1s"
+                title="contact"
             ></a>
         </div>
     )
