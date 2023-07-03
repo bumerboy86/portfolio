@@ -2,7 +2,7 @@ import styles from "./Home.module.css";
 import {useEffect, useState} from "react";
 
 const Home = () => {
-    const work:HTMLElement = document.getElementById("work")!;
+    const portfolio:HTMLElement = document.getElementById("portfolio")!;
     const [words] = useState<string[]>([
         'JAVASCRIPT, TYPESCRIPT',
         'REACT, VUE3, VITE',
@@ -12,8 +12,8 @@ const Home = () => {
     ]);
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
-    const handleScrollToWork = ():void => {
-        work && work.scrollIntoView({behavior: 'smooth'});
+    const handleScrollToPortfolio = ():void => {
+        portfolio && portfolio.scrollIntoView({behavior: 'smooth'});
     };
 
     useEffect(() => {
@@ -32,7 +32,7 @@ const Home = () => {
                 </h2>
                 <p className={styles.home__content}>Специализируюсь на создании пользовательских интерфейсов.</p>
             </div>
-            <a onClick={handleScrollToWork} className={styles.home__btn}>Посмотреть портфолио</a>
+            <a onClick={handleScrollToPortfolio} className={styles.home__btn}>Посмотреть портфолио</a>
         </div>
     )
 }
