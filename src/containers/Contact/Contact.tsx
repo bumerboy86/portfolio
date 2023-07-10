@@ -10,7 +10,6 @@ const Contact = () => {
         const gmailComposeUrl:string = "https://mail.google.com/mail/?view=cm&fs=1&to=" + email + "&su=" + subject + "&body=" + body;
         window.open(gmailComposeUrl);
     }
-
     function isMobile() {
         const userAgent:string = navigator.userAgent;
         return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
