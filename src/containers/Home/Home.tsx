@@ -2,7 +2,7 @@ import styles from "./Home.module.css";
 import {useEffect, useState} from "react";
 
 const Home = () => {
-    const portfolio:HTMLElement = document.getElementById("portfolio")!;
+    const portfolio:HTMLElement | null = document.getElementById("portfolio");
     const [words] = useState<string[]>([
         'JAVASCRIPT, TYPESCRIPT',
         'REACT, VUE3, VITE',

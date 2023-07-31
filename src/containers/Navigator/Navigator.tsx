@@ -21,18 +21,18 @@ const Navigator = () => {
         });
     };
     const handleScrollToWork = ():void => {
-        workRef.current && workRef.current!.scrollIntoView({behavior: "smooth"});
+        workRef.current && workRef.current?.scrollIntoView({behavior: "smooth"});
     };
     const handleScrollToAbout = ():void => {
-        aboutRef.current && aboutRef.current!.scrollIntoView({behavior: "smooth"});
+        aboutRef.current && aboutRef.current?.scrollIntoView({behavior: "smooth"});
     };
 
     const handleScrollToPortfolio = ():void => {
-        aboutRef.current && portfolioRef.current!.scrollIntoView({behavior: "smooth"});
+        aboutRef.current && portfolioRef.current?.scrollIntoView({behavior: "smooth"});
     };
 
     const handleScrollToContact = (): void => {
-        contactRef.current && contactRef.current!.scrollIntoView({behavior: "smooth"});
+        contactRef.current && contactRef.current?.scrollIntoView({behavior: "smooth"});
     }
     return (
         <div className={styles.navigator}>

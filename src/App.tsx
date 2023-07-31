@@ -8,12 +8,12 @@ import Contact from "./containers/Contact/Contact.tsx";
 function App() {
   return (
     <>
-        <Home />
-        <Work />
-        <About />
-        <Portfolio />
-        <Contact />
-        <Navigator />
+      <Home />
+      <Work />
+      <About />
+      <Portfolio />
+      <Contact />
+      <Navigator />
     </>
   )
 }
