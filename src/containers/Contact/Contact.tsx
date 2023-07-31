@@ -3,7 +3,7 @@ import Footer from "../Footer/Footer.tsx";
 
 const Contact = () => {
     function openGmailCompose():void {
-        const email:string = "bumerboy86@gmail.com";
+        const email = "bumerboy86@gmail.com";
         const subject:string = encodeURIComponent("Тема письма");
         const body:string = encodeURIComponent("Текст письма");
 
