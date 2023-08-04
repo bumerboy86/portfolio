@@ -3,14 +3,22 @@ import creativeImg from "../../assets/works/creative.png";
 import marketImg from  "../../assets/works/e-market.png";
 import parallaxImg from "../../assets/works/parallax.png";
 import testImg from "../../assets/works/test.png";
-import todoImg from "../../assets/works/todo.png";
-import emenuImg from "../../assets/works/e-menu.png";
+import zabotik from "../../assets/works/zabotik.png";
+import tiktak from "../../assets/works/tiktak.png";
 
 const Portfolio = () => {
     return (
         <div id="portfolio" className={styles.portfolio__section}>
             <h2>ПОРТФОЛИО</h2>
             <div className={styles.portfolio__grid}>
+                <div className={styles.portfolio__grid_item}>
+                    <img className={styles.portfolio__image} src={zabotik} alt="zabotik img5" />
+                    <a href={"http://zabotik.kz/"} target={"_blank"} rel="noopener noreferrer" className={styles.portfolio__overlay}>
+                        <h4>Заботик</h4>
+                        <h5>Мед сервис</h5>
+                        <h5 className={styles.portfolio__forward}>перейти на сайт</h5>
+                    </a>
+                </div>
                 <div className={styles.portfolio__grid_item}>
                     <img className={styles.portfolio__image} src={creativeImg} alt="portfolio img1" />
                     <a href={"https://bumerboy86.github.io/creative/"} target={"_blank"} rel="noopener noreferrer" className={styles.portfolio__overlay}>
@@ -44,18 +52,10 @@ const Portfolio = () => {
                     </a>
                 </div>
                 <div className={styles.portfolio__grid_item}>
-                    <img className={styles.portfolio__image} src={todoImg} alt="portfolio img5" />
-                    <a href={"https://bumerboy86.github.io/notepad/"} target={"_blank"} rel="noopener noreferrer" className={styles.portfolio__overlay}>
-                        <h4>NotePad</h4>
-                        <h5>Блокнот для задач</h5>
-                        <h5 className={styles.portfolio__forward}>перейти на сайт</h5>
-                    </a>
-                </div>
-                <div className={styles.portfolio__grid_item}>
-                    <img className={styles.portfolio__image} src={emenuImg} alt="portfolio img6" />
-                    <a href={"https://bumerboy86.github.io/e-menu/"} target={"_blank"} rel="noopener noreferrer" className={styles.portfolio__overlay}>
-                        <h4>E-Menu</h4>
-                        <h5>Сайт меню для кафе</h5>
+                    <img className={styles.portfolio__image} src={tiktak} alt="portfolio img6" />
+                    <a href={"https://bumerboy86.github.io/tik-tac-toe/"} target={"_blank"} rel="noopener noreferrer" className={styles.portfolio__overlay}>
+                        <h4>Tik-tak-toe</h4>
+                        <h5>Игра крестики нолики</h5>
                         <h5 className={styles.portfolio__forward}>перейти на сайт</h5>
                     </a>
                 </div>
