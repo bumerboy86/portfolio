@@ -1,11 +1,12 @@
 import styles from "./Portfolio.module.css";
 import booking from "../../assets/works/booking.png";
-// import marketImg from "../../assets/works/e-market.png";
+import gs from "../../assets/works/gs.png";
 import parallaxImg from "../../assets/works/parallax.png";
 import testImg from "../../assets/works/test.png";
 import wheel from "../../assets/works/wheel.png";
 import tiktak from "../../assets/works/tiktak.png";
 import clim from "../../assets/works/climate.png";
+import climb from "../../assets/works/climb.png";
 
 const Portfolio = () => {
   return (
@@ -29,6 +30,54 @@ const Portfolio = () => {
             <h5 className={styles.portfolio__forward}>перейти на сайт</h5>
           </a>
         </div>
+
+        <div className={styles.portfolio__grid_item}>
+          <img
+            className={styles.portfolio__image}
+            src={wheel}
+            alt="wheel-service img2"
+          />
+          <a
+            href={"https://wheel-service.kz"}
+            target={"_blank"}
+            rel="noopener noreferrer"
+            className={styles.portfolio__overlay}
+          >
+            <h4>Wheel-Service</h4>
+            <h5>Шиномонтаж на выезд</h5>
+            <h5 className={styles.portfolio__forward}>перейти на сайт</h5>
+          </a>
+        </div>
+        <div className={styles.portfolio__grid_item}>
+          <img className={styles.portfolio__image} src={gs} alt="gs img2" />
+          <a
+            href={"http://grand-systems.kz"}
+            target={"_blank"}
+            rel="noopener noreferrer"
+            className={styles.portfolio__overlay}
+          >
+            <h4>Grand-Systems</h4>
+            <h5>Рекламное агентство</h5>
+            <h5 className={styles.portfolio__forward}>перейти на сайт</h5>
+          </a>
+        </div>
+        <div className={styles.portfolio__grid_item}>
+          <img
+            className={styles.portfolio__image}
+            src={climb}
+            alt="climbing img2"
+          />
+          <a
+            href={"https://rusclimbing.ru/"}
+            target={"_blank"}
+            rel="noopener noreferrer"
+            className={styles.portfolio__overlay}
+          >
+            <h4>Rusclimbing</h4>
+            <h5>Федерация скалолазанья России</h5>
+            <h5 className={styles.portfolio__forward}>перейти на сайт</h5>
+          </a>
+        </div>
         <div className={styles.portfolio__grid_item}>
           <img
             className={styles.portfolio__image}
@@ -43,23 +92,6 @@ const Portfolio = () => {
           >
             <h4>bookinghub</h4>
             <h5>Онлайн бронирование</h5>
-            <h5 className={styles.portfolio__forward}>перейти на сайт</h5>
-          </a>
-        </div>
-        <div className={styles.portfolio__grid_item}>
-          <img
-            className={styles.portfolio__image}
-            src={wheel}
-            alt="portfolio img2"
-          />
-          <a
-            href={"https://wheel-service.kz"}
-            target={"_blank"}
-            rel="noopener noreferrer"
-            className={styles.portfolio__overlay}
-          >
-            <h4>Wheel-Service</h4>
-            <h5>Шиномонтаж на выезд</h5>
             <h5 className={styles.portfolio__forward}>перейти на сайт</h5>
           </a>
         </div>
