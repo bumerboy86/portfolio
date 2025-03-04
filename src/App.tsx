@@ -15,7 +15,7 @@ function App() {
       <Contact />
       <Navigator />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
